@@ -1,0 +1,5 @@
+1. Clone or pull through ssh key
+git@github.com:Zahid4960/Uri_Online_Judge_Problem_Solving.git
+
+2. Clone or pull through https url
+https://github.com/Zahid4960/Uri_Online_Judge_Problem_Solving.git
