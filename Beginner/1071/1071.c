@@ -2,20 +2,27 @@
 
 int main()
 {
-  int X, Y, sum = 0, i;
+    int X, Y, Result = 0;
 
-  // input values
-  scanf("%d %d", &X, &Y);
+    scanf("%d %d", &X, &Y);
 
-  for(i = X; i > Y; i--){
-    if(i%2 == 0){
-      sum = sum;
+    if(X == Y){
+       Result = 0;
+    }else if(X > Y){
+        X = X;
+        Y = Y;
     }else{
-      sum += i;
+        X = Y;
+        Y = X;
     }
-  }
 
-  printf("%d\n", sum);
+    for(int i = Y + 1; i < X; i++){
+        if((i % 2) != 0){
+            Result += i; 
+        }
+    }
 
-  return 0;
+     printf("%d\n", Result);
+
+    return 0;
 }
