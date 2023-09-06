@@ -1,0 +1,7 @@
+SELECT
+    substring(NATURAL_PERSON.CPF, 1, 3) || '.' || 
+    substring(NATURAL_PERSON.CPF, 4, 3) || '.' || 
+    substring(NATURAL_PERSON.CPF, 7, 3) || '-' || 
+    substring(NATURAL_PERSON.CPF, 10, 2)
+FROM NATURAL_PERSON
+INNER JOIN CUSTOMERS ON NATURAL_PERSON.ID_CUSTOMERS = CUSTOMERS.ID;
